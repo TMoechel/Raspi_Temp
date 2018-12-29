@@ -1,0 +1,22 @@
+{
+  "name": "raspi_temp",
+  "version": "1.0.0",
+  "description": "Get temperature data from a DS18B20 sensor using Raspberry Pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TMoechel/Raspi_Temp.git"
+  },
+  "author": "t.moechel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TMoechel/Raspi_Temp/issues"
+  },
+  "homepage": "https://github.com/TMoechel/Raspi_Temp#readme",
+  "dependencies": {
+    "ds18b20": "^0.1.0"
+  }
+}
