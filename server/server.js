@@ -5,7 +5,7 @@ var config = require('./config/config');
 require('mongoose').connect(config.db.url);
 
 var app = express();
-app.use(cors);
+app.use(cors());
 
 // setup the app middlware
 //require('./middleware/appMiddleware')(app);
