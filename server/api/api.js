@@ -6,8 +6,8 @@ var tempDataController = require('./tempData/tempDataController');
 // has a resourceRoutes.js file with the router ready to go,
 // require them and mount them to their respective routes below
 
-//var tempSaveInterval = setInterval(SaveTemp, 10000);
-SaveTemp();
+var tempSaveInterval = setInterval(SaveTemp, 10000);
+//SaveTemp();  //only for testing
 
 function SaveTemp() {
   tempDataController.save();    
