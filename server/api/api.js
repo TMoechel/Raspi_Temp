@@ -7,11 +7,16 @@ var tempDataController = require('./tempData/tempDataController');
 // require them and mount them to their respective routes below
 
 var tempSaveInterval = setInterval(SaveTemp, 10000);
-//SaveTemp();  //only for testing
+//SaveDummyTemp();  //only for testing
 
 function SaveTemp() {
   tempDataController.save();    
 }
+
+function SaveDummyTemp() {
+  tempDataController.saveDummyData();    
+}
+
 
 
 router.use('/tempData', require('./tempData/tempDataRoutes'));

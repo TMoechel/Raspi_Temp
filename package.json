@@ -4,7 +4,8 @@
   "description": "Get temperature data from a DS18B20 sensor using Raspberry Pi",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

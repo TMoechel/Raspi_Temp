@@ -15,6 +15,15 @@ exports.save = function(req, res, next) {
   saveCurrentTempSensorValue();
 }
 
+exports.saveDummyData = function() {
+  for (var i = 0; i < 20; i++) {
+    var tempData = new TempData( {value : i, location : 'Lollschied', date : Date.now()});
+    tempData.save(function(err, tempData) {
+      if (err) console.log(err);
+    });
+  }
+}
+
 function saveCurrentTempSensorValue() {
   ds18b20.sensors(function(err, ids) {
     if (err) console.log(err);
